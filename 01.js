@@ -58,9 +58,10 @@ ovejas.filter(
 // Dos doritos despues... Resolucion final:
 export default function contarOvejas(ovejas) {
   const ovejitas = ovejas.filter((oveja) => {
-    oveja.name.toLowerCase();
-    if (name.includes("a", "n") && oveja.color == "rojo") return oveja;
-  });
-
+    let letters = oveja.name.toLowerCase();
+    if (letters.includes('a') && letters.includes('n') && oveja.color === 'rojo') 
+    return oveja;
+  })
+  
   return ovejitas;
 }
